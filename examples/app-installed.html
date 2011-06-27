@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		
+		<style>
+			body {background:#FAFAFA; color:#444444; font-family:Helvetica Neue, Helvetica, Arial, sans-serif;}
+		</style>
+		
+		<script type="text/javascript" src="../src/iapplauncher.js"></script>
+		<script type="text/javascript">
+			new iAppLauncher({
+				urlScheme: "fb://feed",
+				appStoreUrl: "itms://itunes.apple.com/us/app/facebook/id284882215?mt=8",
+				cookieName: "iphone_app_prompt_facebook",
+				promptMessage: "Facebook has an iPhone App available. Would you like to launch it now?",
+				autoLaunchMessage: "Launching the Facebook App..."
+			});
+		</script>
+	</head>
+  
+	<body>
+		<h2>iAppLauncher</h2>
+		<h3>A javascript class to launch iPhone apps from a web page.</h3>
+		
+		<p>
+			Prompts users on iOS devices that a native app is available.<br/>
+			Launches the app if they confirm, or takes them to the App Store to download if they don't have the app.<br/>
+			Cookies remember the user's choice and either launches the app automatically everytime they return to the page, or doesn't bother them again if they denied.
+		</p>
+		
+		<br/><br/>
+		<h4>Demo</h4>
+		<p>This demo will launch the native Facebook app</p>
+
+		<br/><br/>
+		<p><i>Must test on iOS device</i></p>
+  
+	</body>
+</html>

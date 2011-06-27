@@ -1,0 +1,5 @@
+A javascript class to launch iPhone apps from a web page.
+		
+Prompts users on iOS devices that a native app is available.<br/>
+Launches the app if they confirm, or takes them to the App Store to download if they don't have the app.<br/>
+Cookies remember the user's choice and either launches the app automatically everytime they return to the page, or doesn't bother them again if they denied.
